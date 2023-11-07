@@ -1,0 +1,77 @@
+.container {
+    background-color: #F0F2F5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-sign-up {
+        width: 450px;
+        height: 500px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px -1px gray;
+
+        .signUp {
+            text-align: center;
+
+            .text {
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 80px;
+            }
+        }
+
+        .box-input {
+            margin: -3% 0% 5% 0%;
+
+            input,
+            input:focus {
+                border: none;
+                outline: none;
+                font-weight: 300;
+                font-size: 16px;
+                box-sizing: border-box;
+                line-height: 25px;
+                width: 225px;
+                margin-left: -5px;
+            }
+
+            .user-name {
+                display: flex;
+                width: 300px;
+                height: 45px;
+                border: 1px solid #d5dfe3;
+                justify-content: left;
+                margin: 0 auto;
+                align-items: center;
+                border-radius: 12px;
+            }
+
+            .password {
+                @extend .user-name;
+                margin: 15px auto;
+            }
+
+            .icon-input {
+                margin: 0 20px;
+                width: 30px;
+                height: 30px;
+            }
+
+        }
+
+        .button-submit {
+            width: 180px;
+            height: 45px;
+            margin-top: 10px;
+            background-color: #4db2d7;
+            border: none;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-weight: 450;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
